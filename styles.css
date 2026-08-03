@@ -247,6 +247,105 @@ h1 {
 .track-actions .tbtn:hover { background: rgba(45,48,71,0.12); transform: translateY(-1px); }
 .track-actions .tbtn.no-lyrics { opacity: 0.4; }
 
+/* ─── Tooltip / popover ──────────────────────────────────────── */
+[data-tip] { position: relative; }
+[data-tip]::after {
+  content: attr(data-tip);
+  position: absolute;
+  bottom: calc(100% + 9px);
+  right: 0;
+  background: var(--dark);
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  padding: 6px 10px;
+  border-radius: 9px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  box-shadow: 0 6px 16px rgba(45,48,71,0.28);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 50;
+}
+[data-tip]::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100% + 3px);
+  right: 14px;
+  border: 6px solid transparent;
+  border-top-color: var(--dark);
+  opacity: 0;
+  transform: translateY(4px);
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  z-index: 50;
+}
+[data-tip]:hover::after, [data-tip]:focus-visible::after,
+[data-tip]:hover::before, [data-tip]:focus-visible::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (hover: none) {
+  /* na dotykových zariadeniach tooltip vyskočí len pri fokuse (ťuknutí) */
+  [data-tip]:hover::after, [data-tip]:hover::before { opacity: 0; }
+}
+
+/* ─── "Čoskoro" — ghost skladby ──────────────────────────────── */
+.soon { margin-top: 22px; }
+.soon-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  margin: 0 0 12px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  color: rgba(45,48,71,0.5);
+  font-size: 0.95rem;
+}
+.soon-line { flex: 1; height: 2px; border-radius: 2px; background: rgba(45,48,71,0.1); }
+.ghosts { opacity: 1; }
+.track.ghost {
+  cursor: default;
+  background: transparent;
+  border: 2px dashed rgba(45,48,71,0.16);
+  box-shadow: none;
+  opacity: 0.85;
+}
+.track.ghost:hover { transform: none; box-shadow: none; }
+.track.ghost .track-index { color: rgba(45,48,71,0.3); font-size: 0.9rem; }
+.track.ghost .track-art {
+  background: linear-gradient(110deg, rgba(45,48,71,0.06) 30%, rgba(255,255,255,0.6) 50%, rgba(45,48,71,0.06) 70%);
+  background-size: 220% 100%;
+  animation: shimmer 2.2s ease-in-out infinite;
+  box-shadow: none;
+}
+.ghost-note { font-size: 22px; opacity: 0.35; }
+.track.ghost .track-title { color: rgba(45,48,71,0.5); font-weight: 600; }
+.track.ghost .track-meta { color: rgba(45,48,71,0.38); }
+.soon-pill {
+  flex: none;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 600;
+  font-size: 0.74rem;
+  color: var(--purple);
+  background: rgba(185,131,255,0.14);
+  padding: 5px 12px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+.soon-note {
+  text-align: center;
+  margin: 14px 0 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: rgba(45,48,71,0.5);
+}
+@keyframes shimmer { 0% { background-position: 120% 0; } 100% { background-position: -120% 0; } }
+
 /* ─── Footer ─────────────────────────────────────────────────── */
 .foot { text-align: center; padding: 28px 0 8px; color: rgba(45,48,71,0.55); font-weight: 600; }
 .caveat { font-family: 'Caveat', cursive; font-size: 1.5rem; color: var(--coral); margin-left: 4px; }

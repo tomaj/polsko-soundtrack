@@ -71,8 +71,8 @@
         </span>
         <span class="track-actions">
           <button class="tbtn lyrics-btn ${t.lyrics ? "" : "no-lyrics"}"
-                  title="Text" aria-label="Text pesničky">📝</button>
-          <a class="tbtn" title="Stiahnuť" aria-label="Stiahnuť"
+                  data-tip="${t.lyrics ? "Text piesne" : "Text čoskoro"}" aria-label="Text piesne">🎤</button>
+          <a class="tbtn" data-tip="Stiahnuť MP3" aria-label="Stiahnuť"
              href="${t.file}" download="${slug(t.title)}.mp3">⬇</a>
         </span>`;
 
@@ -95,6 +95,30 @@
     });
 
     $("trackCount").textContent = TRACKS.length + " " + plural(TRACKS.length);
+    renderSoon();
+  }
+
+  // ── "Čoskoro" — postupne vychádzajúce skladby ───────────────
+  function renderSoon() {
+    const n = (typeof UPCOMING === "number" ? UPCOMING : 0);
+    const el = $("soon");
+    if (!el) return;
+    if (n <= 0) { el.hidden = true; el.innerHTML = ""; return; }
+    const rows = Array.from({ length: n }, () => `
+      <li class="track ghost" aria-disabled="true">
+        <span class="track-index">🔒</span>
+        <span class="track-art"><span class="ghost-note">♪</span></span>
+        <span class="track-body">
+          <span class="track-title">Čoskoro…</span>
+          <span class="track-meta">Nová skladba pribudne</span>
+        </span>
+        <span class="soon-pill">Čoskoro</span>
+      </li>`).join("");
+    el.hidden = false;
+    el.innerHTML = `
+      <p class="soon-head"><span class="soon-line"></span>🎶 Ďalšie skladby<span class="soon-line"></span></p>
+      <ol class="tracklist ghosts">${rows}</ol>
+      <p class="soon-note">Album vzniká na cestách — nové pesničky pribúdajú postupne. 🚗✨</p>`;
   }
 
   function plural(n) {

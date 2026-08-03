@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>🎧 POĽSKO 2026 — Soundtrack 🇵🇱</title>
-  <meta name="description" content="Soundtrack k rodinnému výletu do Poľska 2026. Pusti si, previň, stiahni, prečítaj text." />
+  <meta name="description" content="Soundtrack k rodinnému výletu do Poľska 2026. Pusti si, spievaj, stiahni, prečítaj text." />
   <meta name="theme-color" content="#FFF8E7" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
@@ -33,7 +33,7 @@
       <div class="album-meta">
         <p class="eyebrow">✨ Soundtrack k výletu</p>
         <h1>POĽSKO&nbsp;2026</h1>
-        <p class="subtitle">Pesničky z cesty — pusti si, previň, stiahni.</p>
+        <p class="subtitle">Pesničky z cesty — pusti si, spievaj, stiahni.</p>
         <div class="album-stats">
           <span id="trackCount">— skladieb</span>
           <span class="dot">•</span>
@@ -45,6 +45,9 @@
 
     <!-- ─── Zoznam skladieb ────────────────────────────── -->
     <ol class="tracklist" id="tracklist"></ol>
+
+    <!-- ─── Čoskoro (postupne vychádzajúce skladby) ──────── -->
+    <section class="soon" id="soon" hidden></section>
 
     <footer class="foot">
       <p>Spravené s 💛 na cestu. <span class="caveat">Šťastnú cestu!</span></p>
@@ -77,11 +80,11 @@
 
       <div class="player-actions">
         <div class="vol">
-          <button class="mini" id="muteBtn" aria-label="Stlmiť" title="Hlasitosť">🔊</button>
+          <button class="mini" id="muteBtn" data-tip="Hlasitosť" aria-label="Stlmiť">🔊</button>
           <input type="range" id="vol" class="vol-slider" min="0" max="100" value="100" step="1" aria-label="Hlasitosť" />
         </div>
-        <button class="mini" id="lyricsBtn" aria-label="Text pesničky" title="Text">📝</button>
-        <a class="mini" id="dlBtn" aria-label="Stiahnuť" title="Stiahnuť" download>⬇</a>
+        <button class="mini" id="lyricsBtn" data-tip="Text piesne" aria-label="Text piesne">🎤</button>
+        <a class="mini" id="dlBtn" data-tip="Stiahnuť MP3" aria-label="Stiahnuť" download>⬇</a>
       </div>
     </div>
     <audio id="audio" preload="metadata"></audio>
