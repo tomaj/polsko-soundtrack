@@ -1,0 +1,13 @@
+{
+  "name": "POĽSKO 2026 — Soundtrack",
+  "short_name": "Soundtrack",
+  "description": "Soundtrack k rodinnému výletu do Poľska 2026.",
+  "theme_color": "#FFF8E7",
+  "background_color": "#FFF8E7",
+  "display": "standalone",
+  "start_url": "./",
+  "icons": [
+    { "src": "apple-touch-icon.png", "type": "image/png", "sizes": "180x180" },
+    { "src": "icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any maskable" }
+  ]
+}
