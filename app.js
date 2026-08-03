@@ -20,6 +20,8 @@
   const npCover   = $("npCover");
   const dlBtn     = $("dlBtn");
   const lyricsBtn = $("lyricsBtn");
+  const vol       = $("vol");
+  const muteBtn   = $("muteBtn");
 
   const sheet        = $("sheet");
   const sheetTitle   = $("sheetTitle");
@@ -200,6 +202,40 @@
   prevBtn.addEventListener("click", prev);
   lyricsBtn.addEventListener("click", () => { if (current >= 0) openLyrics(current); });
 
+  // ── Hlasitosť ───────────────────────────────────────────────
+  const VOL_KEY = "soundtrack.volume";
+  function applyVolume(v, save) {
+    v = Math.min(1, Math.max(0, v));
+    audio.volume = v;
+    if (v > 0) audio.muted = false;
+    vol.value = Math.round(v * 100);
+    vol.style.setProperty("--pct", vol.value + "%");
+    muteBtn.textContent = (audio.muted || v === 0) ? "🔇" : v < 0.5 ? "🔉" : "🔊";
+    if (save) { try { localStorage.setItem(VOL_KEY, String(v)); } catch (e) {} }
+  }
+  vol.addEventListener("input", () => applyVolume(vol.value / 100, true));
+  muteBtn.addEventListener("click", () => {
+    if (audio.muted || audio.volume === 0) {
+      // odtlmiť na poslednú / rozumnú hodnotu
+      const restore = audio.volume > 0 ? audio.volume : 1;
+      audio.muted = false;
+      applyVolume(restore, true);
+    } else {
+      audio.muted = true;
+      muteBtn.textContent = "🔇";
+      vol.style.setProperty("--pct", "0%");
+    }
+  });
+  // iOS ignoruje programové nastavenie hlasitosti (ovláda sa HW tlačidlami)
+  // — ak sa audio.volume nedá zmeniť, skry ovládanie, nech nemätie.
+  audio.volume = 0.5;
+  const volumeControllable = audio.volume === 0.5;
+  if (!volumeControllable) document.querySelector(".vol").style.display = "none";
+  // načítaj uloženú hlasitosť (fallback 100 %)
+  let startVol = 1;
+  try { const s = parseFloat(localStorage.getItem(VOL_KEY)); if (isFinite(s)) startVol = s; } catch (e) {}
+  applyVolume(startVol, false);
+
   // klávesnica: medzerník = play/pause, šípky = seek/skladba
   document.addEventListener("keydown", (e) => {
     if (["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)) return;
@@ -208,6 +244,8 @@
     else if (e.code === "ArrowLeft"  && e.shiftKey) prev();
     else if (e.code === "ArrowRight") audio.currentTime = Math.min(audio.duration || 0, audio.currentTime + 5);
     else if (e.code === "ArrowLeft")  audio.currentTime = Math.max(0, audio.currentTime - 5);
+    else if (e.code === "ArrowUp")   { e.preventDefault(); applyVolume(audio.volume + 0.05, true); }
+    else if (e.code === "ArrowDown") { e.preventDefault(); applyVolume(audio.volume - 0.05, true); }
     else if (e.code === "Escape") closeLyrics();
   });
 

@@ -324,7 +324,10 @@ input[type="range"]::-moz-range-thumb {
   background: #fff; border: 3px solid var(--solid, var(--coral)); cursor: pointer;
 }
 
-.player-actions { display: flex; gap: 6px; flex: none; }
+.player-actions { display: flex; align-items: center; gap: 6px; flex: none; }
+
+.vol { display: flex; align-items: center; gap: 8px; }
+.vol-slider { width: 84px; flex: none; }
 .mini {
   width: 40px; height: 40px; border: none; border-radius: 12px;
   background: rgba(45,48,71,0.05); color: var(--dark); font-size: 17px;
@@ -383,7 +386,8 @@ input[type="range"]::-moz-range-thumb {
   .np { width: auto; }
   .np-text { display: none; }
   .np-cover { width: 44px; height: 44px; }
-  .player-actions .mini:first-child { display: none; } /* text len z riadku na mobiloch */
+  .vol-slider { display: none; }        /* na mobile ostáva len 🔊 mute toggle */
+  #lyricsBtn { display: none; }          /* text sa otvára z riadku skladby */
   .track-title { font-size: 1rem; }
 }
 
