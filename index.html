@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>🎧 POĽSKO 2026 — Soundtrack 🇵🇱</title>
+  <meta name="description" content="Soundtrack k rodinnému výletu do Poľska 2026. Pusti si, previň, stiahni, prečítaj text." />
+  <meta name="theme-color" content="#FFF8E7" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="🎧 POĽSKO 2026 — Soundtrack" />
+  <meta property="og:description" content="Album k výletu. Pusti si každú pesničku priamo v prehliadači." />
+  <meta property="og:type" content="music.album" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="mesh" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <!-- ─── Album hlavička ─────────────────────────────── -->
+    <header class="album">
+      <div class="cover" id="albumCover">
+        <span class="cover-emoji">🎧</span>
+        <span class="cover-flag">🇵🇱</span>
+        <div class="cover-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="album-meta">
+        <p class="eyebrow">✨ Soundtrack k výletu</p>
+        <h1>POĽSKO&nbsp;2026</h1>
+        <p class="subtitle">Pesničky z cesty — pusti si, previň, stiahni.</p>
+        <div class="album-stats">
+          <span id="trackCount">— skladieb</span>
+          <span class="dot">•</span>
+          <span id="totalTime">—</span>
+        </div>
+        <a class="back-link" href="https://polska-2026.vercel.app/">🗺️ Späť na itinerár</a>
+      </div>
+    </header>
+
+    <!-- ─── Zoznam skladieb ────────────────────────────── -->
+    <ol class="tracklist" id="tracklist"></ol>
+
+    <footer class="foot">
+      <p>Spravené s 💛 na cestu. <span class="caveat">Šťastnú cestu!</span></p>
+    </footer>
+  </main>
+
+  <!-- ─── Sticky prehrávač ─────────────────────────────── -->
+  <div class="player" id="player" aria-hidden="true">
+    <div class="player-inner">
+      <div class="np">
+        <div class="np-cover" id="npCover"><span>🎵</span></div>
+        <div class="np-text">
+          <div class="np-title" id="npTitle">—</div>
+          <div class="np-sub">POĽSKO 2026 · Soundtrack</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="buttons">
+          <button class="ctrl" id="prevBtn" aria-label="Predošlá">⏮</button>
+          <button class="ctrl play" id="playBtn" aria-label="Prehrať / pozastaviť">▶</button>
+          <button class="ctrl" id="nextBtn" aria-label="Ďalšia">⏭</button>
+        </div>
+        <div class="seek">
+          <span class="time" id="curTime">0:00</span>
+          <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Previnúť" />
+          <span class="time" id="durTime">0:00</span>
+        </div>
+      </div>
+
+      <div class="player-actions">
+        <button class="mini" id="lyricsBtn" aria-label="Text pesničky" title="Text">📝</button>
+        <a class="mini" id="dlBtn" aria-label="Stiahnuť" title="Stiahnuť" download>⬇</a>
+      </div>
+    </div>
+    <audio id="audio" preload="metadata"></audio>
+  </div>
+
+  <!-- ─── Lyrics panel ─────────────────────────────────── -->
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet-backdrop" id="sheetBackdrop"></div>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <button class="sheet-close" id="sheetClose" aria-label="Zavrieť">✕</button>
+      <div class="sheet-emoji" id="sheetEmoji">🎵</div>
+      <h2 id="sheetTitle">Názov</h2>
+      <pre class="lyrics" id="sheetLyrics"></pre>
+    </div>
+  </div>
+
+  <script src="tracks.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
