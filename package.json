@@ -1,0 +1,16 @@
+{
+  "name": "polsko-soundtrack",
+  "version": "1.0.0",
+  "description": "Soundtrack k rodinnému výletu do Poľska 2026",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 5050",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "keywords": ["music", "soundtrack", "audio-player"],
+  "author": "tomaj",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
