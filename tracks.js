@@ -165,4 +165,48 @@ Deti sú vzadu, kufre v aute, ideme,
 Zoznam letí do koša, už ho nechcem mať,
 POĽSKO! POĽSKO! Konečne sa ideme hrať!`,
   },
+  {
+    title: "Zlaté leto",
+    file: "audio/zlate-leto.mp3",
+    emoji: "☀️",
+    accent: "yellow",
+    lyrics: `Leto dvetisícdvadsaťšesť...
+Leto... zlaté leto...
+
+Celý rok sme čakali,
+celý rok sa pýtali.
+A slnko svieti na tvári,
+a všetko okolo žiari.
+
+Leto, leto, zlaté leto,
+a svieť nám rovno do očí,
+toto leto sa neskončí,
+kým sa za ruky držíme
+a nikdy ho nepustíme.
+
+Horská voda, mokré vlasy,
+a nad vodou naše hlasy.
+Večer príde dlhý tieň,
+a bol to najdlhší deň.
+
+Leto, leto, zlaté leto,
+a svieť nám rovno do očí,
+toto leto sa neskončí,
+kým sa za ruky držíme
+a nikdy ho nepustíme.
+
+Zavri oči, pamätaj,
+a tento deň si schovaj,
+toto svetlo si nechaj,
+a nikdy ho nepúšťaj.
+
+Leto, leto, zlaté leto,
+a svieť nám rovno do očí,
+toto leto sa neskončí,
+kým sa za ruky držíme
+a nikdy ho nepustíme,
+zlaté leto za Tatrami.
+
+Leto... zlaté leto...`,
+  },
 ];
