@@ -376,4 +376,69 @@ Nad oblakmi.
 A dole nás čakajú.
 Ešte chvíľu.`,
   },
+  {
+    title: "Nás je šesť",
+    file: "audio/nas-je-sest.mp3",
+    emoji: "6️⃣",
+    accent: "purple",
+    lyrics: `Krakov... večer...
+Dvaja ešte chýbajú
+(POĽ-SKO!)
+
+Nad Krakovom hodiny, trubač hrá svoj tón,
+čakáme pri bráne, kým doznie starý zvon.
+Potom spoza rohu, kde stánky voňajú,
+dva známe hlasy na nás hlasno volajú.
+Teta Veve máva a ujo Rado s ňou,
+zo štyroch je zrazu šesť pod krakovskou tmou.
+
+Raz, dva, tri, štyri...
+päť...
+ŠESŤ!
+
+Šesť! (šesť!) Nás je zrazu šesť!
+dvaja noví lovci a to je dobrá zvesť!
+Krakov nás dal dokopy, drak sa už bojí,
+z dvoch rodín je banda, ktorá pevne stojí!
+POĽSKO! (POĽSKO!) naša banda je už celá,
+POĽSKO! (POĽSKO!) a cesta bude veselá!
+
+Večer je v Krakove a nikto nechce spať,
+lebo zajtra Rabkoland, tam sa bude hrať!
+Kolotoče, cukrová vata, detský rev,
+a nad tým všetkým letí náš šesťhlasý spev.
+Potom cesta stúpa cez tie serpentíny,
+a v Zakopanom čakajú nás doliny.
+
+Raz, dva, tri, štyri...
+päť...
+ŠESŤ!
+
+Šesť! (šesť!) Nás je zrazu šesť!
+dvaja noví lovci a to je dobrá zvesť!
+Krakov nás dal dokopy, drak sa už bojí,
+z dvoch rodín je banda, ktorá pevne stojí!
+POĽSKO! (POĽSKO!) naša banda je už celá,
+POĽSKO! (POĽSKO!) a cesta bude veselá!
+
+Kto je tu? (Mia!)
+Kto je tu? (Matko!)
+Kto je tu? (Janinka!)
+Kto je tu? (Tomaj!)
+Kto je tu? (Teta Veve!)
+Kto je tu? (Ujo Rado!)
+Šesť lovcov, jedna cesta a jedno slovo:
+POĽ-SKO!
+
+Šesť! (šesť!) Nás je zrazu šesť!
+dvaja noví lovci a to je dobrá zvesť!
+Krakov nás dal dokopy, drak sa už bojí,
+z dvoch rodín je banda, ktorá pevne stojí!
+POĽSKO! (POĽSKO!) naša banda je už celá,
+POĽSKO! (POĽSKO!) a cesta bude veselá!
+
+Šesť...
+šesť...
+POĽ-SKO!`,
+  },
 ];
