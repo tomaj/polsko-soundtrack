@@ -316,4 +316,64 @@ Ešte raz! (ešte raz!)
 Zmrzlina... limonáda...
 naposledy.`,
   },
+  {
+    title: "Nad oblakmi",
+    file: "audio/nad-oblakmi.mp3",
+    emoji: "☁️",
+    accent: "sky",
+    lyrics: `Lanovka sa pohla...
+a zrazu je ticho.
+
+Celý rok som doma prala,
+celý rok som varievala.
+Teraz sedím, nič nerobím,
+a vôbec sa tu nenudím.
+
+Budík, káva, kľúče, volant, každý deň ten stres,
+a takto to ide stále, aj vlani, aj dnes.
+Mail, telefón, porada a ďalší termín, choď,
+a doma na mňa čakajú a hovoria: poď!
+
+A teraz...
+nič.
+Len sedím.
+
+Tri minúty ticha máme,
+nikam sa neponáhľame.
+
+Tu hore sme nad oblakmi,
+a dolina pod nohami.
+Tu hore je dobre sedieť,
+len tak dýchať a len vidieť.
+Nad oblakmi.
+
+Vidíš tie hory?
+(Vidím ich. Vidím.)
+Počuješ to ticho?
+(Počujem. Počujem.)
+
+Tu hore sme nad oblakmi,
+a dolina pod nohami.
+Tu hore je dobre sedieť,
+len tak dýchať a len vidieť.
+Nad oblakmi.
+
+O chvíľu sme dole a deti chcú zmrzlinu,
+ale ešte tu máme aspoň polhodinu.
+Ešte chvíľu sa pozeraj,
+a potom pokojne vstávaj.
+
+Tu hore sme nad oblakmi,
+(žiadny mail, žiadny termín, aspoň na pol hodiny)
+a dolina pod nohami.
+(len lano, vietor a ty vedľa mňa)
+Tu hore je dobre sedieť,
+(fakt dobre sa tu sedí, fakt dobre sa tu sedí)
+len tak dýchať a len vidieť.
+Nad oblakmi.
+Nad oblakmi.
+
+A dole nás čakajú.
+Ešte chvíľu.`,
+  },
 ];
