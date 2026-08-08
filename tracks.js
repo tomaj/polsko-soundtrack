@@ -441,4 +441,56 @@ POĽSKO! (POĽSKO!) a cesta bude veselá!
 šesť...
 POĽ-SKO!`,
   },
+  {
+    title: "Drak pod hradom",
+    file: "audio/drak-pod-hradom.mp3",
+    emoji: "🐉",
+    accent: "teal",
+    lyrics: `Sto rokov...
+sto rokov ticha...
+a niekto klope.
+
+Sto rokov spím pod zemou,
+s ohňom a s nocou temnou.
+Počujem kroky nad hlavou,
+chodíte za mojou slávou.
+
+Poď bližšie...
+ešte bližšie...
+a teraz sa pozeraj.
+
+Drak! (Drak!) ja som drak pod hradom,
+Drak! (Drak!) a trasiem sa hladom.
+Poď bližšie, poď bližšie ku mne,
+a uvidíš, čo je vo tme.
+
+Ovce som jedával večery,
+a potom som spal na dne diery.
+Vypil som z rieky, čo sa dalo,
+a aj tak mi to bolo málo.
+
+Poď bližšie...
+ešte bližšie...
+a teraz sa pozeraj.
+
+Drak! (Drak!) ja som drak pod hradom,
+Drak! (Drak!) a trasiem sa hladom.
+Poď bližšie, poď bližšie ku mne,
+a uvidíš, čo je vo tme.
+
+Keď fúknem oheň, deti tlieskajú,
+a ešte raz si ma zavolajú.
+Tak fúknem ešte raz a dosť,
+veď aj drak má svoju radosť.
+
+Drak! (Drak!) ja som drak pod hradom,
+Drak! (Drak!) a trasiem sa hladom.
+Poď bližšie, poď bližšie ku mne,
+a uvidíš, čo je vo tme.
+Drak! (Drak!)
+Drak! (Drak!)
+
+Sto rokov...
+a spím ďalej.`,
+  },
 ];
