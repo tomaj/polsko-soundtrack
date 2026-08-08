@@ -209,4 +209,111 @@ zlaté leto za Tatrami.
 
 Leto... zlaté leto...`,
   },
+  {
+    title: "V aute",
+    file: "audio/v-aute.mp3",
+    emoji: "🚗",
+    accent: "green",
+    lyrics: `Zafira...
+Kufor plný, jeden smer.
+Poď.
+
+Šesť ráno, v držiaku stojí káva,
+klíma beží, Janinka smer dáva.
+Batožinu celú v kufri už máme,
+a tristo kilometrov si dnes dáme.
+Arašidy po aute lietajú,
+a keksy do sedačiek padajú.
+
+V aute! (v aute!)
+Plný kufor, dlhá cesta, ideme,
+a jeden smer, nič iné už nechceme.
+Klíma beží, vzadu vládne bordel,
+a ťahá nás ďalej jeden Opel.
+V aute! (v aute!)
+
+Vzadu nám bežia dve rozprávky naraz,
+keď jedna zhasne, tak je koniec zaraz.
+Drobky sú všade, špina, prázdne fľaše,
+ale deti sú spokojné, sú naše.
+Ešte sto kilometrov do cieľa,
+a kávy už veru nemám veľa.
+
+V aute! (v aute!)
+Plný kufor, dlhá cesta, ideme,
+a jeden smer, nič iné už nechceme.
+Klíma beží, vzadu vládne bordel,
+a ťahá nás ďalej jeden Opel.
+V aute! (v aute!)
+
+Kedy tam už budeme? (Ešte nie!)
+Môžem si dať ešte keks? (Zober si!)
+Ide ti ten tablet? (IDE!)
+Tak dobre. Zafira, poď ďalej.
+
+V aute! (v aute!)
+Plný kufor, dlhá cesta, ideme,
+a jeden smer, nič iné už nechceme.
+Klíma beží, vzadu vládne bordel,
+a ťahá nás ďalej jeden Opel.
+V aute! (v aute!)
+V aute! (v aute!)
+
+Zafira...
+ideme.`,
+  },
+  {
+    title: "Zmrzlina a limonáda",
+    file: "audio/zmrzlina-a-limonada.mp3",
+    emoji: "🍦",
+    accent: "pink",
+    lyrics: `Uh! Uh-huh!
+Zmrzlina... limonáda...
+Poď!
+
+Pri stánku už dlho stojím,
+a očami sa už prosím.
+Ja si dva kopčeky dám,
+a ostatné rozdám vám.
+
+Prosím, prosím, prosím ťa,
+veď je to len maličkosť!
+Dobre, ale potom dosť!
+
+Zmrzlina, limonáda,
+a k tomu čokoláda.
+Zmrzlina, limonáda,
+toto je fakt paráda!
+Ešte raz! (ešte raz!)
+
+Palacinka s čokoládou,
+a zapijem limonádou.
+Brucho ma už trochu bolí,
+ale Janinka dovolí.
+
+Prosím, prosím, prosím ťa,
+veď je to len maličkosť!
+Dobre, ale potom dosť!
+
+Zmrzlina, limonáda,
+a k tomu čokoláda.
+Zmrzlina, limonáda,
+toto je fakt paráda!
+Ešte raz! (ešte raz!)
+
+Kto mi zjedol posledný kopček? (Ja nie!)
+Kto má nos od čokolády? (Ja nie!)
+Kto si pýta ešte jednu? (MY VŠETCI!)
+Tak dobre... naposledy!
+
+Zmrzlina, limonáda,
+a k tomu čokoláda.
+Zmrzlina, limonáda,
+toto je fakt paráda!
+Ešte raz! (ešte raz!)
+Ešte raz! (ešte raz!)
+
+Zmrzlina... limonáda...
+naposledy.`,
+  },
 ];
