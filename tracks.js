@@ -433,6 +433,68 @@ A dole nás čakajú.
 Ešte chvíľu.`,
   },
   {
+    title: "Dino patrol",
+    file: "audio/dino-patrol.mp3",
+    emoji: "🦕",
+    accent: "orange",
+    lyrics: `Zatorland.
+Dino patrol.
+Poď!
+
+Sto dinosaurov medzi nami,
+a všetky revú nad hlavami.
+Mia sa fotí, kde sa len dá,
+a každý dino tu fotku má.
+
+Kto sa bojí? (Nikto!)
+Kto ide prvý? (My!)
+Dino patrol - poď!
+
+Dino patrol! (Dino patrol!)
+Sto dinosaurov, jeden rev,
+a nad tým všetkým letí spev.
+Sme v Zatorlande, sme tu my,
+a plnia sa nám všetky sny.
+Dino patrol! (Dino patrol!)
+
+Na člne cez vodu ideme,
+a bohov po ceste stretneme.
+A trójsky kôň a Kyklop v tráve,
+a Mia ich má všetkých v hlave.
+
+Kto sa bojí? (Nikto!)
+Kto ide prvý? (My!)
+Dino patrol - poď!
+
+Dino patrol! (Dino patrol!)
+Sto dinosaurov, jeden rev,
+a nad tým všetkým letí spev.
+Sme v Zatorlande, sme tu my,
+a plnia sa nám všetky sny.
+Dino patrol! (Dino patrol!)
+
+Tomaj na kolotoč zas a zas,
+a nechce ísť dole, nemá čas.
+A Matko v autíčku si sedí,
+a do všetkých okolo letí.
+Mia lezie ako opica,
+a nad zemou je jej ulica.
+
+Argentinosaurus, tridsaťpäť,
+a Matko naňho pozerá späť.
+
+Dino patrol! (Dino patrol!)
+Sto dinosaurov, jeden rev,
+a nad tým všetkým letí spev.
+Sme v Zatorlande, sme tu my,
+a plnia sa nám všetky sny.
+Dino patrol! (Dino patrol!)
+Dino patrol! (Dino patrol!)
+
+Zatorland.
+Dino patrol.`,
+  },
+  {
     title: "Nás je šesť",
     file: "audio/nas-je-sest.mp3",
     emoji: "6️⃣",
