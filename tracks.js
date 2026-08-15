@@ -23,7 +23,7 @@
  *  Koľko "čoskoro" (zamknutých) slotov ukázať pod zoznamom — evokuje album,
  *  ktorý vychádza postupne. Daj 0, keď už bude kompletný.
  */
-const UPCOMING = 1;
+const UPCOMING = 0;
 
 const TRACKS = [
   {
@@ -676,5 +676,54 @@ Koleso! (Koleso!)
 A nakoniec sme šli.
 Radko: to bolo super.
 Krakov!`,
+  },
+  {
+    title: "Dobrú noc, Poľsko",
+    file: "audio/dobru-noc-polsko.mp3",
+    emoji: "🌙",
+    accent: "purple",
+    lyrics: `Doma.
+Ticho.
+A kufre pri dverách.
+
+Kufre sme doma vybaľovali,
+a piesok z topánok vysypali.
+Fotky si už doma pozeráme,
+a na každú z nich si spomíname.
+
+Sedem dní.
+Tisíc kilometrov.
+Sto dinosaurov.
+Stotridsaťsedem schodov.
+A o jednu zmrzlinu viac.
+
+Leteli sme nad oblaky,
+a boli sme tie zázraky.
+Bolo to zlaté leto,
+a nikto nám ho nevezme.
+Boli sme zlatí.
+
+Ešte počujem z auta rev,
+a ešte počujem náš spev.
+Ostalo Poľsko v hlave nám,
+a už ho nikomu nedám.
+
+Wisla.
+Zator.
+Krakov.
+Zakopane.
+
+Leteli sme nad oblaky,
+a boli sme tie zázraky.
+Bolo to zlaté leto,
+a nikto nám ho nevezme.
+Boli sme zlatí.
+
+A ešte raz, naposledy:
+POĽSKO! (POĽSKO!)
+POĽSKO! (POĽSKO!)
+
+...a dobrú noc, Poľsko.
+Dobrú noc.`,
   },
 ];
