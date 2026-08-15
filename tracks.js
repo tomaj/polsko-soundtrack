@@ -317,6 +317,62 @@ Zmrzlina... limonáda...
 naposledy.`,
   },
   {
+    title: "Dzień dobry",
+    file: "audio/dzien-dobry.mp3",
+    emoji: "💬",
+    accent: "green",
+    lyrics: `Štyri slová.
+Nič viac.
+Poď.
+
+Keď ti niekto niečo daruje,
+tak mu povieš pekne: dziękuję.
+Keď sa niečo v stánku kupuje,
+spýtaš sa: ile to kosztuje?
+
+Raz to počuješ,
+druhýkrát to povieš,
+tretíkrát to už vieš!
+
+Dzień dobry! (dzień dobry!)
+Dziękuję! (dziękuję!)
+Proszę! (proszę!)
+Przepraszam! (przepraszam!)
+Štyri slová a si tam ako doma,
+a viac ti netreba ani slova.
+
+Keď letíš chodbou ako raketa,
+tak sa pýtaš: gdzie jest toaleta?
+Keď je horúco a veľmi chce sa ti vody,
+tak povieš: poproszę wodę i dwa lody.
+
+Raz to počuješ,
+druhýkrát to povieš,
+tretíkrát to už vieš!
+
+Dzień dobry! (dzień dobry!)
+Dziękuję! (dziękuję!)
+Proszę! (proszę!)
+Przepraszam! (przepraszam!)
+Štyri slová a si tam ako doma,
+a viac ti netreba ani slova.
+
+Ako sa povie ďakujem? (DZIĘKUJĘ!)
+Ako sa povie prepáčte? (PRZEPRASZAM!)
+Ako sa povie zmrzlina? (LODY!)
+Ako sa povie dobrú noc? (DOBRANOC!)
+
+Dzień dobry! (dzień dobry!)
+Dziękuję! (dziękuję!)
+Proszę! (proszę!)
+Przepraszam! (przepraszam!)
+Štyri slová a si tam ako doma,
+a viac ti netreba ani slova.
+
+A na konci zamávaš...
+do widzenia!`,
+  },
+  {
     title: "Nad oblakmi",
     file: "audio/nad-oblakmi.mp3",
     emoji: "☁️",
