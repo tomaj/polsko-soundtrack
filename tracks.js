@@ -23,7 +23,7 @@
  *  Koľko "čoskoro" (zamknutých) slotov ukázať pod zoznamom — evokuje album,
  *  ktorý vychádza postupne. Daj 0, keď už bude kompletný.
  */
-const UPCOMING = 3;
+const UPCOMING = 1;
 
 const TRACKS = [
   {

@@ -116,7 +116,7 @@
       </li>`).join("");
     el.hidden = false;
     el.innerHTML = `
-      <p class="soon-head"><span class="soon-line"></span>🎶 Ďalšie skladby<span class="soon-line"></span></p>
+      <p class="soon-head"><span class="soon-line"></span>🎶 ${n === 1 ? "Ďalšia skladba" : "Ďalšie skladby"}<span class="soon-line"></span></p>
       <ol class="tracklist ghosts">${rows}</ol>
       <p class="soon-note">Album vzniká na cestách — nové pesničky pribúdajú postupne. 🚗✨</p>`;
   }
