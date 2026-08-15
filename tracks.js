@@ -493,4 +493,70 @@ Drak! (Drak!)
 Sto rokov...
 a spím ďalej.`,
   },
+  {
+    title: "Krakovské oko",
+    file: "audio/krakovske-oko.mp3",
+    emoji: "🎡",
+    accent: "coral",
+    lyrics: `Krakov!
+Šesť nás je!
+Poď!
+
+Od rána už ideme,
+šesť nás je a vládzeme.
+Zbyšek košele, my kávu,
+a syfón nám zdvihol hlavu.
+
+Poďme na koleso! (Nie!)
+Poďme na koleso! (Nie!)
+Ešte raz - koleso! (NIE!)
+
+Koleso! (Koleso!)
+Šiesti sme hore, ideme,
+a už nikam nevládzeme.
+Wawel dole pod nohami,
+a celý Krakov je s nami!
+Koleso! (Koleso!)
+
+Deti chcú zmrzlinu hneď,
+žurek, boršč a potom sleď.
+Radko vraví: idem spať,
+a Janinka: treba vstať!
+
+Poďme na koleso! (Nie!)
+Poďme na koleso! (Nie!)
+Ešte raz - koleso! (NIE!)
+
+Koleso! (Koleso!)
+Šiesti sme hore, ideme,
+a už nikam nevládzeme.
+Wawel dole pod nohami,
+a celý Krakov je s nami!
+Koleso! (Koleso!)
+
+Praclík, hrad a tmavý mrak,
+dve sekundy ohňa, drak.
+Radko nechcel, no aj tak
+teraz mu tam svieti zrak.
+
+Večer. Izba. Všetci sedia.
+Ideme?
+(Zajtra!)
+Ráno otvárajú až o dvanástej.
+(...)
+Tak teraz.
+(TAK TERAZ!)
+
+Koleso! (Koleso!)
+Šiesti sme hore, ideme,
+a už nikam nevládzeme.
+Wawel dole pod nohami,
+a celý Krakov je s nami!
+Koleso! (Koleso!)
+Koleso! (Koleso!)
+
+A nakoniec sme šli.
+Radko: to bolo super.
+Krakov!`,
+  },
 ];
