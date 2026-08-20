@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>🥂 KASKÁDY — Soundtrack 🇸🇰</title>
+  <meta name="description" content="Soundtrack ku Kaskádam. Štyri verzie jedného večera — pusti si, spievaj, stiahni, prečítaj text." />
+  <meta name="theme-color" content="#FFF8E7" />
+
+  <!-- Favicon / ikonky -->
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="apple-mobile-web-app-title" content="Kaskády" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="🥂 KASKÁDY — Soundtrack" />
+  <meta property="og:description" content="Alika · Kajko · Veve — štyri verzie jedného večera na Kaskádach." />
+  <meta property="og:type" content="music.album" />
+  <meta property="og:image" content="../icon-512.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="mesh" aria-hidden="true"></div>
+
+  <main class="wrap">
+    <!-- ─── Album hlavička ─────────────────────────────── -->
+    <header class="album">
+      <div class="cover" id="albumCover">
+        <span class="cover-emoji">🥂</span>
+        <span class="cover-flag">🇸🇰</span>
+        <div class="cover-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="album-meta">
+        <p class="eyebrow">✨ Soundtrack k pobytu</p>
+        <h1>KASKÁDY</h1>
+        <p class="subtitle">Alika · Kajko · Veve — štyri verzie jedného večera.</p>
+        <div class="album-stats">
+          <span id="trackCount">— skladieb</span>
+          <span class="dot">•</span>
+          <span id="totalTime">—</span>
+        </div>
+        <a class="back-link" href="../">🎧 Ďalší album: POĽSKO 2026</a>
+      </div>
+    </header>
+
+    <!-- ─── Zoznam skladieb ────────────────────────────── -->
+    <ol class="tracklist" id="tracklist"></ol>
+
+    <!-- ─── Čoskoro (postupne vychádzajúce skladby) ──────── -->
+    <section class="soon" id="soon" hidden></section>
+
+    <footer class="foot">
+      <p>Spravené s 💛 na Kaskády. <span class="caveat">Na zdravie!</span></p>
+    </footer>
+  </main>
+
+  <!-- ─── Sticky prehrávač ─────────────────────────────── -->
+  <div class="player" id="player" aria-hidden="true">
+    <div class="player-inner">
+      <div class="np">
+        <div class="np-cover" id="npCover"><span>🎵</span></div>
+        <div class="np-text">
+          <div class="np-title" id="npTitle">—</div>
+          <div class="np-sub">KASKÁDY · Soundtrack</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="buttons">
+          <button class="ctrl" id="prevBtn" aria-label="Predošlá">⏮</button>
+          <button class="ctrl play" id="playBtn" aria-label="Prehrať / pozastaviť">▶</button>
+          <button class="ctrl" id="nextBtn" aria-label="Ďalšia">⏭</button>
+        </div>
+        <div class="seek">
+          <span class="time" id="curTime">0:00</span>
+          <input type="range" id="seek" min="0" max="1000" value="0" step="1" aria-label="Previnúť" />
+          <span class="time" id="durTime">0:00</span>
+        </div>
+      </div>
+
+      <div class="player-actions">
+        <div class="vol">
+          <button class="mini" id="muteBtn" data-tip="Hlasitosť" aria-label="Stlmiť">🔊</button>
+          <input type="range" id="vol" class="vol-slider" min="0" max="100" value="100" step="1" aria-label="Hlasitosť" />
+        </div>
+        <button class="mini" id="lyricsBtn" data-tip="Text piesne" aria-label="Text piesne">🎤</button>
+        <a class="mini" id="dlBtn" data-tip="Stiahnuť MP3" aria-label="Stiahnuť" download>⬇</a>
+      </div>
+    </div>
+    <audio id="audio" preload="metadata"></audio>
+  </div>
+
+  <!-- ─── Lyrics panel ─────────────────────────────────── -->
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet-backdrop" id="sheetBackdrop"></div>
+    <div class="sheet-card" role="dialog" aria-modal="true" aria-labelledby="sheetTitle">
+      <button class="sheet-close" id="sheetClose" aria-label="Zavrieť">✕</button>
+      <div class="sheet-emoji" id="sheetEmoji">🎵</div>
+      <h2 id="sheetTitle">Názov</h2>
+      <pre class="lyrics" id="sheetLyrics"></pre>
+    </div>
+  </div>
+
+  <script src="tracks.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>

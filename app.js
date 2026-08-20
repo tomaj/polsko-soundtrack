@@ -37,6 +37,11 @@
   // ── Pomocníci ───────────────────────────────────────────────
   const accentClass = (a) => "a-" + (a || "purple");
 
+  // názov albumu pre lockscreen — stránka ho môže prebiť globálom ALBUM
+  const ALBUM_META = (typeof ALBUM === "object" && ALBUM)
+    ? ALBUM
+    : { title: "Soundtrack", artist: "POĽSKO 2026" };
+
   const fmt = (s) => {
     if (!isFinite(s) || s < 0) return "0:00";
     const m = Math.floor(s / 60);
@@ -279,7 +284,7 @@
       const t = TRACKS[current];
       if (!t) return;
       navigator.mediaSession.metadata = new MediaMetadata({
-        title: t.title, artist: "POĽSKO 2026", album: "Soundtrack",
+        title: t.title, artist: ALBUM_META.artist, album: ALBUM_META.title,
       });
     });
     navigator.mediaSession.setActionHandler("play", () => audio.play());
