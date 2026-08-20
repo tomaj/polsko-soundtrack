@@ -20,7 +20,7 @@ const PAGE_ICONS = { lyrics: "¶", download: "↓" };
 const TRACKS = [
   {
     title: "¡Kaskády, Kaskády!",
-    file: "../audio/kaskady/kaskady-2.mp3",
+    file: "/audio/kaskady/kaskady-2.mp3",
     emoji: "♫",
     accent: "tan",
     lyrics: `Z Bratislavy vyrážajú, motor pekne vrčí,
@@ -77,7 +77,7 @@ ale o rok v ten istý deň sa sem zas vrátime.
   },
   {
     title: "Uno, dos, tres",
-    file: "../audio/kaskady/kaskady-3.mp3",
+    file: "/audio/kaskady/kaskady-3.mp3",
     emoji: "♬",
     accent: "slate",
     lyrics: `Uno - biela guľa padne rovno do lúzy,
@@ -135,7 +135,7 @@ ale o rok v ten istý deň sa sem zas vrátime.
   },
   {
     title: "Tri cesty, jeden večer",
-    file: "../audio/kaskady/kaskady-1.mp3",
+    file: "/audio/kaskady/kaskady-1.mp3",
     emoji: "♪",
     accent: "forest",
     lyrics: `Ešte je tma a celé mesto tvrdo spí,
@@ -204,7 +204,7 @@ a že sa sem raz vrátime - to všetci dobre vieme.
   },
   {
     title: "Kaskády Reggaetón",
-    file: "../audio/kaskady/kaskady-4.mp3",
+    file: "/audio/kaskady/kaskady-4.mp3",
     emoji: "♩",
     accent: "sage",
     lyrics: `Z Bratislavy vyrážajú, (eh)
