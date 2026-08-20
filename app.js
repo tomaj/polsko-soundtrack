@@ -42,6 +42,12 @@
     ? ALBUM
     : { title: "Soundtrack", artist: "POĽSKO 2026" };
 
+  // ikonky v zozname — stránka ich môže prebiť globálom PAGE_ICONS
+  const ICONS = Object.assign(
+    { lyrics: "🎤", download: "⬇" },
+    (typeof PAGE_ICONS === "object" && PAGE_ICONS) || {}
+  );
+
   const fmt = (s) => {
     if (!isFinite(s) || s < 0) return "0:00";
     const m = Math.floor(s / 60);
@@ -76,9 +82,9 @@
         </span>
         <span class="track-actions">
           <button class="tbtn lyrics-btn ${t.lyrics ? "" : "no-lyrics"}"
-                  data-tip="${t.lyrics ? "Text piesne" : "Text čoskoro"}" aria-label="Text piesne">🎤</button>
+                  data-tip="${t.lyrics ? "Text piesne" : "Text čoskoro"}" aria-label="Text piesne">${ICONS.lyrics}</button>
           <a class="tbtn" data-tip="Stiahnuť MP3" aria-label="Stiahnuť"
-             href="${t.file}" download="${slug(t.title)}.mp3">⬇</a>
+             href="${t.file}" download="${slug(t.title)}.mp3">${ICONS.download}</a>
         </span>`;
 
       // klik na riadok → prehraj (okrem akčných tlačidiel)
